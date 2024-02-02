@@ -1,0 +1,27 @@
+{
+  "name": "rollup-plugin-org",
+  "version": "1.0.0",
+  "description": "Org File Format Support for Rollup",
+  "main": "dist/rollup-plugin-org.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prebuild": "rm -rf dist/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rollup-plugin"
+  ],
+  "author": "log101",
+  "license": "ISC",
+  "dependencies": {
+    "rollup": "^4.9.6"
+  },
+  "devDependencies": {
+    "@rollup/pluginutils": "^5.1.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
