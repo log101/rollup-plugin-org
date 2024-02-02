@@ -4,6 +4,18 @@
   "description": "Org File Format Support for Rollup",
   "type": "module",
   "main": "dist/rollup-plugin-org.js",
+  "module": "dist/rollup-plugin-org.js",
+  "exports": {
+    "types": "./types/index.d.ts",
+    "default": "./dist/rollup-plugin-org.js",
+    "import": "./dist/rollup-plugin-org.js"
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.map",
+    "types"
+  ],
+  "types": "./types/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "prebuild": "rm -rf dist/*",

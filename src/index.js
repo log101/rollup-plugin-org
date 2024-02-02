@@ -8,9 +8,9 @@ export default function org(options = {}) {
         transform(org, id) {
             if (!filter(id)) return null
 
-            // const data = org
+            const data = org
             return {
-                code: `export default ${JSON.stringify('log101')};`,
+                code: `export default ${JSON.stringify(data)};`,
                 map: { mappings: '' }
             }
 
